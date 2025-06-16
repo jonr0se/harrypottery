@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at center, #0f0c29, #302b63, #24243e);
+  color: #f5f5dc;
+  font-family: 'MedievalSharp', cursive;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.title {
+  font-size: 4rem;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.wand-btn {
+  background: #800000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.wand-btn:hover {
+  background: #b22222;
+}
+
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkle 0.8s ease-out forwards;
+}
+
+@keyframes sparkle {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
